@@ -34,6 +34,7 @@ Flask-Login==0.6.0
 Flask-SQLAlchemy==2.5.1
 Flask-WTF==1.0.1
 idna==3.3
+flask-mysqldb
 importlib-metadata==4.11.3
 MarkupSafe==2.1.1
 pycparser==2.21
