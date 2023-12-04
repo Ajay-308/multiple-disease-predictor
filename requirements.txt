@@ -9,3 +9,5 @@ pycparser==2.21
 
 pyparsing==3.0.9
 cffi==1.15.0
+
+configparser>=3.5.0
