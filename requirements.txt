@@ -6,3 +6,6 @@ pandas==1.5.3
 scikit_learn==1.2.2
 sqlparse==0.4.2
 pycparser==2.21
+
+pyparsing==3.0.9
+cffi==1.15.0
