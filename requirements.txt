@@ -36,12 +36,9 @@ Flask-WTF==1.0.1
 greenlet==1.1.2
 idna==3.3
 importlib-metadata==4.11.3
-itsdangerous==2.1.2
-
 MarkupSafe==2.1.1
 pycparser==2.21
 six==1.16.0
-SQLAlchemy==1.4.35
 sqlparse==0.4.2
 WTForms==3.0.1
 zipp==3.8.0
