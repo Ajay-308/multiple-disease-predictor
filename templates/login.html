@@ -1,0 +1,83 @@
+<!-- Store this code in 'login.html' file inside the 'templates' folder -->
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title> Login </title>
+		<style>
+			.div{
+				margin-top: 3rem;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                box-shadow: 2px 2px 2px 2px #16a085 ;
+                padding: 10px;
+                background-color: #fff;
+                margin-left: 27rem;
+                 width: 400px;
+                height: 500px;
+                margin-bottom: 7rem;
+			}
+
+		.header{
+			text-align: center;
+            font-weight: 300;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular',Verdana, sans-serif;
+            color: #16a085;
+		}
+		.textbox {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #CCCCCC;
+            border-radius: 5px;
+            margin-bottom: 5px;
+        }
+        .btn {
+           background-color: #16a085;
+           color: #FFFFFF;
+           padding: 10px;
+           border: none;
+           font-size: 20px;
+           font-weight: 400;
+          font-family: 'Lucida Sans', 'Lucida Sans Regular',Verdana, sans-serif;
+           border-radius: 5px;
+           cursor: pointer;
+        }
+        .btn:hover{
+           background-color: #005daa;
+        }
+        .bottom {
+          text-align: center;
+          margin-top: 10px;
+          font-size: 18px;
+          font-weight: 200;
+          color: #999999;
+		}
+        .bottom a {
+          color:#16a085;
+          text-decoration: none;
+        }
+        .bottom :hover{
+          color: #005daa;
+        }
+		</style>	
+	</head>
+	<body></br></br></br></br></br>
+		<div align="center" class="div">
+		<div  class="border">
+			<div class="header">
+				<h1 class="word">Login</h1>
+			</div></br></br></br>
+			<h2 class="word">
+				<form action="{{ url_for('login') }}" method="post">
+				<div class="msg">{{ msg }}</div>
+					<input id="username" name="username" type="text" placeholder="Enter Your Username" class="textbox"/></br></br>
+					<input id="password" name="password" type="password" placeholder="Enter Your Password" class="textbox"/></br></br></br>
+					<input type="submit" class="btn" value="Sign In"></br></br>
+				</form>
+			</h2>
+			<p class="bottom">Don't have an account? <a class="bottom" href="{{url_for('register')}}"> </br>Sign Up here</a></p>
+		</div>
+		</div>
+	</body>
+</html>
+

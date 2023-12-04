@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Healthcare</title>
+    <link rel="stylesheet" href="" />
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style1.css')}}" />
+    <link
+      rel="stylesheet"
+      
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" class="logo"
+        ><i class="fas fa-heartbeat"></i> <strong>AI</strong>Disease Prediction</a
+      >
+
+      <nav class="navbar">
+        <a href="login">Login</a>
+        <a href="register">Register</a>
+        <a href="#appointment">Nearby Hospitals</a>
+      </nav>
+
+      <div id="menu-btn" class="fas fa-bars"></div>
+    </header>
+
+    <section class="home" id="home">
+      <div class="image">
+        <img src="{{url_for('static',filename='image/home-img.svg')}}" alt="" />
+      </div>
+
+      <div class="content">
+        <h3>We take care of your healthy life</h3>
+        <p>
+          Your health is our top priority. With our comprehensive range of services
+          and personalized care, we are committed to helping you achieve 
+          and maintain a healthy and fulfilling life.
+        </p>
+        <a href="login" class="btn"
+          >Login to Predict Diseases <span class="fas fa-chevron-right"></span
+        ></a>
+      </div>
+    </section>
+
+    <section class="icons-container">
+      <div class="icons">
+        <i class="fas fa-user-md"></i>
+        <h3>150+</h3>
+        <p>doctors at work</p>
+      </div>
+
+      <div class="icons">
+        <i class="fas fa-users"></i>
+        <h3>1030+</h3>
+        <p>satisfied patients</p>
+      </div>
+
+      <div class="icons">
+        <i class="fas fa-procedures"></i>
+        <h3>450+</h3>
+        <p>bed facility</p>
+      </div>
+
+      <div class="icons">
+        <i class="fas fa-hospital"></i>
+        <h3>70+</h3>
+        <p>available hospitals</p>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h1 class="heading"><span>about</span>us</h1>
+
+      <div class="row">
+        <div class="image">
+          <img src="{{url_for('static',filename='image/about-img.svg')}}" alt="" />
+        </div>
+
+        <div class="content">
+          <h3>world's best quality treatment</h3>
+          <p>
+            Experience world-class healthcare with our premium quality treatments.</br> 
+            Our expert team of healthcare professionals are dedicated to delivering 
+
+          </p>
+          <p>
+            the best possible care to our patients, using state-of-the-art technology</br>
+            and the latest medical advancements.
+          </p>
+          <a href="#" class="btn"
+            >learn more <span class="fas fa-chevron-right"></span
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="services">
+      <h1 class="heading"><span>services</span></h1>
+
+      <div class="box-container">
+        <div class="box">
+          <i class="fas fa-notes-medical"></i>
+          <h3>free checkup</h3>
+            <p>the service of scheduling and booking medical consultations 
+              with healthcare professionals through internet-based platforms.</p>
+          <a href="#" class="btn"
+            >learn more <span class="fas fa-chevron-right"></span
+          ></a>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-ambulance"></i>
+          <h3>24/7 ambulance</h3>
+          <p>24/7 ambulance service provides emergency medical transportation</p>
+          <a href="#" class="btn"
+            >learn more <span class="fas fa-chevron-right"> </span
+          ></a>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-user-md"></i>
+          <h3>expert doctors</h3>
+          <p>
+            Expert doctors are highly skilled and knowledgeable medical professionals.
+          </p>
+          <a href="#" class="btn"
+            >learn more <span class="fas fa-chevron-right"></span
+          ></a>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-pills"></i>
+          <h3>medicine</h3>
+          <p>medicine is provided in the form of recommended treatments 
+            and medications based on the predicted diseaseor disorder,</p>
+          <a href="" class="btn"
+            >learn more <span class="fas fa-chevron-right"></span
+          ></a>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-procedures"></i>
+          <h3>bed facility</h3>
+          <p>Bed Facility provided by hospital to stay while medical treatment.</p>
+          <a href="#" class="btn"
+            >learn more <span class="fas fa-chevron-right"></span
+          ></a>
+        </div>
+
+        <div class="box">
+          <i class="fas fa-heartbeat"></i>
+          <h3>total care</h3>
+          <p>Comprehensive and integrated approach to medical treatment.</p>
+          <a href="#" class="btn"
+            >learn more <span class="fas fa-chevron-right"></span
+          ></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="appointment" id="appointment">
+      <h1 class="heading"><span>Search</span>Nearby Hospitals</h1>
+      <div class="row">
+        <div class="image">
+          <img src="{{url_for('static',filename='image/appointment-img.svg')}}" alt="" />
+        </div>
+
+        <form action="" method="post">
+          
+          <form action="" method="post">
+          <center>
+            <h1 style="color:lawngreen;">
+              Hospital
+            </h1>
+            
+            <div>
+              <!-- Google Map Copied Code -->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d112046.22785925181!2d77.09810396250002!3d28.646402900000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd22bbd4a035%3A0xc92e7b3bfe5ce245!2sHospital!5e0!3m2!1sen!2sin!4v1679129482129!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </center>
+        </form>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>quick links</h3>
+         
+          <a href="login"><i class="fas fa-chevron-right"></i>login</a>
+          <a href="register"><i class="fas fa-chevron-right"></i>register</a>
+          <a href="#"><i class="fas fa-chevron-right"></i>Nearby Hospitals</a>
+        </div>
+
+        <div class="box">
+          <h3>our services</h3>
+          <a href="#"><i class="fas fa-chevron-right"></i>health report </a>
+          <a href="#"><i class="fas fa-chevron-right"></i>disease prediction</a>
+          <a href="#"><i class="fas fa-chevron-right"></i>doctore near me </a>
+          <a href="#"><i class="fas fa-chevron-right"></i>diet plan </a>
+        </div>
+
+        <div class="box">
+          <h3>contact us</h3>
+          <a href="#"> <i class="fas fa-phone"></i> +91999999999</a>
+          <a href="#"><i class="fas fa-envelope"></i> aimedical@gmail.com</a>
+        </div>
+
+        <div class="box">
+          <h3>follow us</h3>
+          <a href="#"><i class="fab fa-twitter"></i> twitter</a>
+          <a href="#"><i class="fab fa-instagram"></i> instagram</a>
+          <a href="#"><i class="fab fa-linkedin"></i> linkedin</a>
+          <a href="#"><i class="fab fa-pinterest"></i> pinterest</a>
+        </div>
+
+      </div>
+      <div class="credit">
+        created by <span>The boyzz</span>|all rights reserved
+      </div>
+    </section>
+
+</html>

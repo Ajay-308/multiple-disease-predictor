@@ -1,0 +1,97 @@
+
+
+<!-- Store this code in 'register.html' file inside the 'templates' folder -->
+ 
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title> Register </title>
+        <style>
+          /* Set the font family and background color */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F8F8F8;
+}
+
+/* Style the container for the registration form */
+.card2 {
+  margin-top: 3rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px #16a085 ;
+  padding: 10px;
+  background-color: #fff;
+  margin-left: 27rem;
+        width: 400px;
+        height: 500px;
+        margin-bottom: 7rem;
+}
+
+/* Style the form header */
+.header {
+  text-align: center;
+  font-weight: 300;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular',Verdana, sans-serif;
+  color: #16a085;
+}
+
+/* Style the form input fields and button */
+.textbox {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  background-color: #16a085;
+  color: #FFFFFF;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color: #005daa;
+}
+
+/* Style the link at the bottom of the form */
+.bottom {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #999999;
+}
+
+.bottom a {
+  color:#16a085;
+  text-decoration: none;
+}
+.bottom :hover{
+  color: #005daa;
+}
+
+        </style>          
+    </head>
+    <body></br></br></br></br></br>
+        <div align=center class="card2">
+          <div class="border">
+             <div class="header">
+                <h1 class="word">Register</h1>
+             </div></br></br></br>
+            <h2 class="word">
+                <form action="{{ url_for('register') }}" method="post">
+                  <div class="msg">{{ msg }}</div>
+                    
+                    <input id="username" name="username" type="text" placeholder="Enter Your Username" class="textbox"/></br></br>
+                    <input id="password" name="password" type="password" placeholder="Enter Your Password" class="textbox"/></br></br>
+                    <input id="email" name="email" type="text" placeholder="Enter Your Email ID" class="textbox"/></br></br>
+                    <input type="submit" class="btn" value="Sign Up"></br>
+                </form>
+            </h2>
+            <p class="bottom">Already have an account?  <a class="bottom" href="{{url_for('login')}}"></br> Sign In here</a></p>
+          </div>
+        </div>
+    </body>
+</html
